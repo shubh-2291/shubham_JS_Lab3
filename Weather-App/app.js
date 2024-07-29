@@ -18,9 +18,7 @@ function setError(error) {
 function getDataFromWeatherApi(city) {
     fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=7e3f21edee540e6110af347b55eb1ab2`)
         .then(response => response.json())
-        .then(response => displayResults(response))
-        .catch((error) => console.log(error));
-
+        .then(response => displayResults(response));
 }
 
 function displayResults(weatherData) {
