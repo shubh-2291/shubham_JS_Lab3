@@ -31,7 +31,6 @@ function displayResults(weatherData) {
     } else {
         errorNode.style.display = 'none';
 
-        console.log(weatherData);
         const city = document.querySelector('#city');
         city.innerText = `${weatherData.name} , ${weatherData.sys.country}`;
 
